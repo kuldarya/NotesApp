@@ -1,21 +1,15 @@
 //
 //  ContentView.swift
 //  Notes
-//
-//  Created by Darya Kuliashova on 10/04/2023.
-//
+// 
 
 import SwiftUI
 
 struct ContentView: View {
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+
         }
-        .padding()
     }
 }
 
