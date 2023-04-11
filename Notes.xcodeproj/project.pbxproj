@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B06B18029E56EB900472AF3 /* IsHidden.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B06B17F29E56EB900472AF3 /* IsHidden.swift */; };
+		0B06B18329E56EF100472AF3 /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B06B18229E56EF100472AF3 /* View+Extensions.swift */; };
 		4BB5DEF229E49B5E002A0F35 /* NoteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BB5DEF129E49B5E002A0F35 /* NoteViewModel.swift */; };
 		4BDF0D7029E4500600B6E9F8 /* NotesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BDF0D6F29E4500600B6E9F8 /* NotesApp.swift */; };
 		4BDF0D7229E4500600B6E9F8 /* NoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BDF0D7129E4500600B6E9F8 /* NoteView.swift */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0B06B17F29E56EB900472AF3 /* IsHidden.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IsHidden.swift; sourceTree = "<group>"; };
+		0B06B18229E56EF100472AF3 /* View+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
 		273D5E02CE0EC99B7674E3E5 /* Pods-Notes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Notes.release.xcconfig"; path = "Target Support Files/Pods-Notes/Pods-Notes.release.xcconfig"; sourceTree = "<group>"; };
 		4BB5DEF129E49B5E002A0F35 /* NoteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteViewModel.swift; sourceTree = "<group>"; };
 		4BDF0D6C29E4500600B6E9F8 /* Notes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Notes.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -39,6 +43,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0B06B17E29E56E9B00472AF3 /* ViewModifiers */ = {
+			isa = PBXGroup;
+			children = (
+				0B06B17F29E56EB900472AF3 /* IsHidden.swift */,
+			);
+			path = ViewModifiers;
+			sourceTree = "<group>";
+		};
+		0B06B18129E56ED400472AF3 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				0B06B18229E56EF100472AF3 /* View+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		4BB5DEEF29E49AD6002A0F35 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
@@ -78,7 +98,9 @@
 			isa = PBXGroup;
 			children = (
 				4BDF0D6F29E4500600B6E9F8 /* NotesApp.swift */,
+				0B06B18129E56ED400472AF3 /* Extensions */,
 				4BB5DEEF29E49AD6002A0F35 /* Screens */,
+				0B06B17E29E56E9B00472AF3 /* ViewModifiers */,
 				4BDF0D7329E4500800B6E9F8 /* Assets.xcassets */,
 				4BDF0D7529E4500800B6E9F8 /* Preview Content */,
 			);
@@ -227,7 +249,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				4BDF0D7229E4500600B6E9F8 /* NoteView.swift in Sources */,
+				0B06B18029E56EB900472AF3 /* IsHidden.swift in Sources */,
 				4BDF0D7029E4500600B6E9F8 /* NotesApp.swift in Sources */,
+				0B06B18329E56EF100472AF3 /* View+Extensions.swift in Sources */,
 				4BB5DEF229E49B5E002A0F35 /* NoteViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
