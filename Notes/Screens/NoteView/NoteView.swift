@@ -29,16 +29,19 @@ struct NoteView: View {
                 .toolbar {
                     ToolbarItemGroup(placement: .primaryAction) {
                         Button {
+
+                        } label: {
+                            ShareLink(item: "") {
+                                Image(systemName: "square.and.arrow.up")
+                                    .foregroundColor(text.isEmpty ? .gray : .orange)
+                            }
+                        }
+                        .disabled(text.isEmpty)
+
+                        Button {
                             // create checklist
                         } label: {
                             Image(systemName: "checklist")
-                                .foregroundColor(.orange)
-                        }
-
-                        Button {
-                            // share note
-                        } label: {
-                            Image(systemName: "square.and.arrow.up")
                                 .foregroundColor(.orange)
                         }
 
