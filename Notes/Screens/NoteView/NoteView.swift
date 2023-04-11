@@ -20,11 +20,34 @@ struct NoteView: View {
                 .padding(.horizontal, 20)
 
                 .toolbar {
-                    Button("Done") {
-                        viewModel.saveNote()
+                    ToolbarItemGroup(placement: .primaryAction) {
+                        Button {
+                            // create checklist
+                        } label: {
+                            Image(systemName: "checklist")
+                                .foregroundColor(.orange)
+                        }
+
+                        Button {
+                            // share note
+                        } label: {
+                            Image(systemName: "square.and.arrow.up")
+                                .foregroundColor(.orange)
+                        }
+
+                        Button {
+                            // delete
+                        } label: {
+                            Image(systemName: "trash")
+                                .foregroundColor(.orange)
+                        }
+
+                        Button("Done") {
+                            viewModel.saveNote()
+                        }
+                        .foregroundColor(.orange)
+                        .font(.headline)
                     }
-                    .foregroundColor(.black)
-                    .font(.headline)
                 }
         }
     }
