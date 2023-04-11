@@ -11,6 +11,7 @@ struct NoteView: View {
 
     @StateObject var viewModel = NoteViewModel()
     @State private var text = ""
+    @FocusState private var keyboardFocused: Bool
 
     // MARK: - Body
 
@@ -18,7 +19,13 @@ struct NoteView: View {
         NavigationView {
             TextEditor(text: $text)
                 .padding(.horizontal, 20)
-
+                .accentColor(.orange)
+                .focused($keyboardFocused)
+                .onAppear {
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
+                        keyboardFocused = true
+                    }
+                }
                 .toolbar {
                     ToolbarItemGroup(placement: .primaryAction) {
                         Button {
@@ -43,8 +50,17 @@ struct NoteView: View {
                         }
 
                         Button("Done") {
-                            viewModel.saveNote()
+                            viewModel.doneButtonTapped = true
+
+                            if viewModel.doneButtonTapped {
+                                keyboardFocused = false
+                                viewModel.saveNote()
+                            }
                         }
+                        .isHidden(
+                            hidden: (viewModel.doneButtonTapped && !keyboardFocused),
+                            removed: true
+                        )
                         .foregroundColor(.orange)
                         .font(.headline)
                     }
