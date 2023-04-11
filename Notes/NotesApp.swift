@@ -9,7 +9,7 @@ import SwiftUI
 struct NotesApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NoteView()
         }
     }
 }
