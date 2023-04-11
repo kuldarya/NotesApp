@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4BB5DEF229E49B5E002A0F35 /* NoteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BB5DEF129E49B5E002A0F35 /* NoteViewModel.swift */; };
 		4BDF0D7029E4500600B6E9F8 /* NotesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BDF0D6F29E4500600B6E9F8 /* NotesApp.swift */; };
-		4BDF0D7229E4500600B6E9F8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BDF0D7129E4500600B6E9F8 /* ContentView.swift */; };
+		4BDF0D7229E4500600B6E9F8 /* NoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BDF0D7129E4500600B6E9F8 /* NoteView.swift */; };
 		4BDF0D7429E4500800B6E9F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BDF0D7329E4500800B6E9F8 /* Assets.xcassets */; };
 		4BDF0D7729E4500800B6E9F8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BDF0D7629E4500800B6E9F8 /* Preview Assets.xcassets */; };
 		856D63A8399403F0BF7EE0DA /* libPods-Notes.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 732EB6022C278C972602B5A1 /* libPods-Notes.a */; };
@@ -16,9 +17,10 @@
 
 /* Begin PBXFileReference section */
 		273D5E02CE0EC99B7674E3E5 /* Pods-Notes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Notes.release.xcconfig"; path = "Target Support Files/Pods-Notes/Pods-Notes.release.xcconfig"; sourceTree = "<group>"; };
+		4BB5DEF129E49B5E002A0F35 /* NoteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteViewModel.swift; sourceTree = "<group>"; };
 		4BDF0D6C29E4500600B6E9F8 /* Notes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Notes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BDF0D6F29E4500600B6E9F8 /* NotesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesApp.swift; sourceTree = "<group>"; };
-		4BDF0D7129E4500600B6E9F8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		4BDF0D7129E4500600B6E9F8 /* NoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteView.swift; sourceTree = "<group>"; };
 		4BDF0D7329E4500800B6E9F8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4BDF0D7629E4500800B6E9F8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		732EB6022C278C972602B5A1 /* libPods-Notes.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Notes.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -37,6 +39,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4BB5DEEF29E49AD6002A0F35 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				4BB5DEF029E49B1B002A0F35 /* NoteView */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		4BB5DEF029E49B1B002A0F35 /* NoteView */ = {
+			isa = PBXGroup;
+			children = (
+				4BDF0D7129E4500600B6E9F8 /* NoteView.swift */,
+				4BB5DEF129E49B5E002A0F35 /* NoteViewModel.swift */,
+			);
+			path = NoteView;
+			sourceTree = "<group>";
+		};
 		4BDF0D6329E4500600B6E9F8 = {
 			isa = PBXGroup;
 			children = (
@@ -59,7 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				4BDF0D6F29E4500600B6E9F8 /* NotesApp.swift */,
-				4BDF0D7129E4500600B6E9F8 /* ContentView.swift */,
+				4BB5DEEF29E49AD6002A0F35 /* Screens */,
 				4BDF0D7329E4500800B6E9F8 /* Assets.xcassets */,
 				4BDF0D7529E4500800B6E9F8 /* Preview Content */,
 			);
@@ -207,8 +226,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4BDF0D7229E4500600B6E9F8 /* ContentView.swift in Sources */,
+				4BDF0D7229E4500600B6E9F8 /* NoteView.swift in Sources */,
 				4BDF0D7029E4500600B6E9F8 /* NotesApp.swift in Sources */,
+				4BB5DEF229E49B5E002A0F35 /* NoteViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
