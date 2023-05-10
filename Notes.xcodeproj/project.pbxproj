@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		0B06B18029E56EB900472AF3 /* IsHidden.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B06B17F29E56EB900472AF3 /* IsHidden.swift */; };
 		0B06B18329E56EF100472AF3 /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B06B18229E56EF100472AF3 /* View+Extensions.swift */; };
+		4B5923CF2A0A810700045CCB /* NotesListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5923CE2A0A810700045CCB /* NotesListViewModel.swift */; };
+		4B5923D12A0A812600045CCB /* NotesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5923D02A0A812600045CCB /* NotesListView.swift */; };
+		4B5923D42A0A838D00045CCB /* AlignedHStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5923D32A0A838D00045CCB /* AlignedHStack.swift */; };
+		4B5923D72A0A87AD00045CCB /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5923D62A0A87AD00045CCB /* Note.swift */; };
+		4B5923DB2A0B914F00045CCB /* NoteCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5923DA2A0B914F00045CCB /* NoteCellView.swift */; };
 		4BB5DEF229E49B5E002A0F35 /* NoteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BB5DEF129E49B5E002A0F35 /* NoteViewModel.swift */; };
 		4BDF0D7029E4500600B6E9F8 /* NotesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BDF0D6F29E4500600B6E9F8 /* NotesApp.swift */; };
 		4BDF0D7229E4500600B6E9F8 /* NoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BDF0D7129E4500600B6E9F8 /* NoteView.swift */; };
@@ -21,6 +26,11 @@
 		0B06B17F29E56EB900472AF3 /* IsHidden.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IsHidden.swift; sourceTree = "<group>"; };
 		0B06B18229E56EF100472AF3 /* View+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
 		273D5E02CE0EC99B7674E3E5 /* Pods-Notes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Notes.release.xcconfig"; path = "Target Support Files/Pods-Notes/Pods-Notes.release.xcconfig"; sourceTree = "<group>"; };
+		4B5923CE2A0A810700045CCB /* NotesListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesListViewModel.swift; sourceTree = "<group>"; };
+		4B5923D02A0A812600045CCB /* NotesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesListView.swift; sourceTree = "<group>"; };
+		4B5923D32A0A838D00045CCB /* AlignedHStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlignedHStack.swift; sourceTree = "<group>"; };
+		4B5923D62A0A87AD00045CCB /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
+		4B5923DA2A0B914F00045CCB /* NoteCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteCellView.swift; sourceTree = "<group>"; };
 		4BB5DEF129E49B5E002A0F35 /* NoteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteViewModel.swift; sourceTree = "<group>"; };
 		4BDF0D6C29E4500600B6E9F8 /* Notes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Notes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BDF0D6F29E4500600B6E9F8 /* NotesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesApp.swift; sourceTree = "<group>"; };
@@ -59,9 +69,52 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		4B5923CD2A0A80F700045CCB /* NotesList */ = {
+			isa = PBXGroup;
+			children = (
+				4B5923D02A0A812600045CCB /* NotesListView.swift */,
+				4B5923CE2A0A810700045CCB /* NotesListViewModel.swift */,
+			);
+			path = NotesList;
+			sourceTree = "<group>";
+		};
+		4B5923D22A0A837D00045CCB /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				4B5923D82A0B913100045CCB /* Base */,
+				4B5923D92A0B913A00045CCB /* Views */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		4B5923D52A0A87A500045CCB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4B5923D62A0A87AD00045CCB /* Note.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4B5923D82A0B913100045CCB /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				4B5923D32A0A838D00045CCB /* AlignedHStack.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		4B5923D92A0B913A00045CCB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4B5923DA2A0B914F00045CCB /* NoteCellView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		4BB5DEEF29E49AD6002A0F35 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				4B5923CD2A0A80F700045CCB /* NotesList */,
 				4BB5DEF029E49B1B002A0F35 /* NoteView */,
 			);
 			path = Screens;
@@ -98,7 +151,9 @@
 			isa = PBXGroup;
 			children = (
 				4BDF0D6F29E4500600B6E9F8 /* NotesApp.swift */,
+				4B5923D22A0A837D00045CCB /* Components */,
 				0B06B18129E56ED400472AF3 /* Extensions */,
+				4B5923D52A0A87A500045CCB /* Models */,
 				4BB5DEEF29E49AD6002A0F35 /* Screens */,
 				0B06B17E29E56E9B00472AF3 /* ViewModifiers */,
 				4BDF0D7329E4500800B6E9F8 /* Assets.xcassets */,
@@ -248,11 +303,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B5923D42A0A838D00045CCB /* AlignedHStack.swift in Sources */,
 				4BDF0D7229E4500600B6E9F8 /* NoteView.swift in Sources */,
 				0B06B18029E56EB900472AF3 /* IsHidden.swift in Sources */,
 				4BDF0D7029E4500600B6E9F8 /* NotesApp.swift in Sources */,
 				0B06B18329E56EF100472AF3 /* View+Extensions.swift in Sources */,
+				4B5923D72A0A87AD00045CCB /* Note.swift in Sources */,
+				4B5923CF2A0A810700045CCB /* NotesListViewModel.swift in Sources */,
 				4BB5DEF229E49B5E002A0F35 /* NoteViewModel.swift in Sources */,
+				4B5923DB2A0B914F00045CCB /* NoteCellView.swift in Sources */,
+				4B5923D12A0A812600045CCB /* NotesListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

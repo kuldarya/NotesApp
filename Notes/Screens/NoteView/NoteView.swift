@@ -12,6 +12,7 @@ struct NoteView: View {
     @StateObject var viewModel = NoteViewModel()
     @State private var text = ""
     @FocusState private var keyboardFocused: Bool
+    var note: Note
 
     // MARK: - Body
 
@@ -74,6 +75,11 @@ struct NoteView: View {
 
 struct NoteView_Previews: PreviewProvider {
     static var previews: some View {
-        NoteView()
+        NoteView(note: Note(
+            id: 1,
+            title: "Note 1",
+            date: "10.10.2020",
+            description: "This is the description of Note 1")
+        )
     }
 }
